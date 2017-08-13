@@ -76,9 +76,9 @@ I want to find the most common words in the documents; however, I have to clean 
 ```{r, echo = TRUE, warning = FALSE, message = FALSE, collapse = TRUE}
 
 clean.contract <- function(contract) {
-  #contract <- gsub("â", "'", contract)
-  contract <- gsub("â", "'", contract)
-  doc <- gsub("â s", "", contract)
+  #contract <- gsub("Ã¢", "'", contract)
+  contract <- gsub("Ã¢", "'", contract)
+  doc <- gsub("Ã¢ s", "", contract)
 	contract <- gsub("won't", "will not", contract)
 	contract <- gsub("n't", " not", contract)
 	contract <- gsub("'ll", " will", contract)
